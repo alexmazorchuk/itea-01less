@@ -55,4 +55,3 @@ fi
 
 mv $BACKUP_ROOT/$DUMP_NAME $BACKEND_UPLOAD
 echo "Done! Dump moved to: $BACKEND_UPLOAD"
-exit 0
