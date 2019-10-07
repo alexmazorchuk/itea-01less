@@ -45,8 +45,9 @@ if [[ ! -f $BACKEND_UPLOAD ]]
 then
 	mkdir -p $BACKEND_UPLOAD
 	echo "Create directory: $BACKEND_UPLOAD"
+fi
 
-elif [[ -f $BACKEND_UPLOAD/$DUMP_NAME ]]
+if [[ -f $BACKEND_UPLOAD/$DUMP_NAME ]]
 then
 	rm -r $BACKEND_UPLOAD/$DUMP_NAME
 	echo "Clear upload directory: $BACKEND_UPLOAD/$DUMP_NAME"
